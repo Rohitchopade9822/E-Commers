@@ -1,1 +1,65 @@
 /* You can add global styles to this file, and also import other style files */
+/* Styling the container for the sign-up form */
+.seller-auth {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin-top: -50px;
+  }
+  
+  /* Styling the inner div */
+  .seller-auth > div {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+  }
+  
+  /* Styling the form heading */
+  .seller-auth h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  /* Styling the form */
+  .common-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Styling the input fields */
+  .common-form .input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  /* Styling the input fields on focus */
+  .common-form .input:focus {
+    border-color: #555;
+  }
+  
+  /* Styling the submit button */
+  .common-form .form-button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Styling the submit button on hover */
+  .common-form .form-button:hover {
+    background-color: #218838;
+  }
+  

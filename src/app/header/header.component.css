@@ -1,0 +1,86 @@
+.nav{
+    display: flex;
+    justify-self: space-between;
+
+    input element.style {
+        align-content: space-around;
+    }
+}
+.nav h1 {
+    color: darkcyan;
+    margin: 0;
+    font-size: x-large;
+    margin-top: 15px;
+}
+.nav div {
+    order: 2; /* Move the search bar to the right */
+}
+.nav ul{
+    margin-left: 120px;
+    margin-top: 0%;
+}
+.nav ul li {
+    margin-left: 20px;
+}
+
+.nav li{
+    display: inline-flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.nav li{
+    padding-left: 15px;
+    padding-top: 15px;
+}
+.nav li a{
+    text-decoration: none;
+}
+
+
+
+.nav .nav-search input{
+    margin-top: 200px;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: Right;
+    order: 3; /* Move the navigation links to the left */
+    
+    padding-right: 100px;
+}
+/* Styling the input field */
+.nav input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    width: 200px;
+    margin-left: 40px;
+    margin-top: 15px;
+    border-radius: 1px;
+    border-color: rgb(84, 49, 164);
+    
+  }
+  
+  /* Styling the search button */
+  .nav button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px; /* Adding space between the input and button */
+  }
+  .nav input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    width: 200px;
+  }
