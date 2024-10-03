@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { SellService } from '../services/sell.service';
 import { SellerHomeComponent } from '../seller-home/seller-home.component';
 import { Router } from '@angular/router';
+import { SignUp } from '../Data-type';
 
 @Component({
   selector: 'app-seller',
@@ -12,7 +13,7 @@ export class SellerComponent {
 
   constructor(private sell:SellService, private router:Router){}
   ngonInit():void{}
-  SignUp(data:object):void{
+  SignUp(data:SignUp):void{
   
     this.sell.userSignUp(data).subscribe((result)=>{
 
