@@ -8,6 +8,16 @@
     background-color: #f4f4f4;
     margin-top: -50px;
   }
+
+  .Sign-Up{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin-top: -50px;
+    
+  }
   
   /* Styling the inner div */
   .seller-auth > div {
