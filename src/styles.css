@@ -15,7 +15,7 @@
     align-items: center;
     height: 100vh;
     background-color: #f4f4f4;
-    margin-top: -50px;
+    margin-top: -10px;
     
   }
   
@@ -73,3 +73,50 @@
     background-color: #218838;
   }
   
+  .fliplink {
+    color: #007bff; /* Blue color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make it bold */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.fliplink:hover {
+    color: #0056b3; /* Darker blue on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+.seller-auth.Sign-Up{
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  margin-top: -10px;
+
+}
+.logout-link {
+  color: red; /* Change to your desired color */
+  font-weight: bold; /* Make the text bold */
+  text-decoration: none; /* Remove the underline */
+  cursor: pointer; /* Show a pointer cursor on hover */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.logout-link:hover {
+  color: darkred; /* Darker red on hover */
+  text-decoration: underline; /* Underline on hover */
+}
+.user-name {
+  font-size: 1.5em; /* Increase the font size */
+  color: #333; /* Dark grey color */
+  font-weight: bold; /* Bold text */
+  padding: 10px; /* Some padding around */
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #f9f9f9; /* Light grey background */
+  text-align: center; /* Center the text */
+  width: fit-content; /* Width will fit the content */
+  margin: 0 auto; /* Center horizontally */
+}

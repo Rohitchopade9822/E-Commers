@@ -1,13 +1,65 @@
-<nav class="nav">
+<!-- <nav class="nav">
     <h1>E-com</h1>
-    <div>
+    <div *ngIf="menutype==='default'">
         <input type="text" placeholder="Search for product">
         <button>Search</button>
     </div>
-    <ul>
-        <li><a routerLink=" ">Home</a></li>
-        <li><a routerLink="seller">Seller</a></li>
-        <li><a href="#">Login</a></li>
-        <li><a href="#">Cart(0)</a></li>
-    </ul>
+     <div [ngSwitch]="menutype">
+        <ul *ngSwitch ="'default'">
+            <li><a routerLink=" ">Home</a></li>
+            <li><a routerLink="seller">Seller</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#"></a></li>
+        </ul>
+        <ul *ngSwitch ="'seller'">
+            <li><a routerLink="">Add Product</a></li>
+            <li><a routerLink="seller">Product list</a></li>
+            <li><a href="#">Logout</a></li>
+            <li><a href="#">Seller Name</a></li>
+        </ul>
+    </div> 
+  
+</nav>  -->
+<!-- <nav class="nav">
+    <h1>E-com</h1>
+    <div *ngIf="menutype==='default'">
+        <input type="text" placeholder="Search for product">
+        <button>Search</button>
+    </div>
+     <div ngSwitch="menutype">
+        <ul *ngSwitch ="'default'">
+            <li><a routerLink=" ">Home</a></li>
+            <li><a routerLink="seller">Seller</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#"></a></li>
+        </ul>
+        <ul *ngSwitch ="'seller'">
+            <li><a routerLink="">Add Product</a></li>
+            <li><a routerLink="seller">Product list</a></li>
+            <li><a href="#">Logout</a></li>
+            <li><a href="#">Seller Name</a></li>
+        </ul>
+    </div> 
+  
+</nav>  -->
+<nav class="nav">
+    <h1><a routerLink="/">E-Com</a></h1>
+    <div *ngIf="menutype === 'default'">
+        <input type="text" placeholder="Search for product">
+        <button>Search</button>
+    </div>
+    <div [ngSwitch]="menutype">
+        <ul *ngSwitchCase="'default'">
+            <li><a routerLink="/">Home</a></li>
+            <li><a routerLink="seller">Seller</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#"></a></li>
+        </ul>
+        <ul *ngSwitchCase="'seller'">
+            <li><a routerLink="seller-add-product">Add Product</a></li>
+            <li><a routerLink="product-list">Product list</a></li>
+            <li><a (click)="logout()" class="logout-link" >Logout</a></li>
+           <h3>Well Come <li><a href="#" class="user-name">{{sellername | titlecase}}</a></li></h3>
+        </ul>
+    </div>
 </nav>

@@ -1,30 +1,52 @@
 import { Component, OnInit } from '@angular/core';
 import { SellService } from '../services/sell.service';
-import { SellerHomeComponent } from '../seller-home/seller-home.component';
 import { Router } from '@angular/router';
-import { SignUp } from '../Data-type';
+
 
 @Component({
+
   selector: 'app-seller',
+
   templateUrl: './seller.component.html',
+
   styleUrls: ['./seller.component.css']
+
 })
 export class SellerComponent implements OnInit {
 
-  constructor(private sell:SellService, private router:Router){}
+  constructor(private seller:SellService, private router:Router){}
 
-  showlogin=false;
+  showLogin = false;
+    usererror:string="";
+
   ngOnInit(): void {
-    this.sell.reloadseller()
+    this.seller.reloadseller()
     throw new Error('Method not implemented.');
   }
   ngonInit():void{}
-  SignUp(data:SignUp):void{
+ 
+  SignUp(data: any): void {
     
-    this.sell.userSignUp(data)
+    this.seller.userSignUp(data);
 
   }
-  openlogin(){
+  Login(data: any): void {
+
+   this.seller.SellerLogin(data)
+   this.seller.isloginerror.subscribe((iserror)=>{
+         if(iserror){
+           
+          this.usererror="email or password is not correct"
+         }
+   })
 
   }
+
+  toggleLogin(): void {
+
+    this.showLogin = !this.showLogin;
+
+  }
+  
+  
 }

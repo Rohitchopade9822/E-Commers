@@ -60,5 +60,26 @@
       "email": "df",
       "password": "fd"
     }
+  ],
+  "product": [
+    {},
+    {
+      "id": "2e95",
+      "name": "Name",
+      "Price": "12000",
+      "color": "jkrt42122@",
+      "Category": "electronic",
+      "Description": "best product",
+      "URL": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRVTW6S6WYqNgPoFkNlzPNavRS9w0Vj7o_lVY4VfxZfCeh28L-KXANa_qwB0BrWBA4yVVT7MZqb-b5s0YdJl-FVtrC2e1b-ddle6SFK7O-wFFWXjq3DWe0cTXDYdYJkboLRjZBpAH7T0pQ&usqp=CAc"
+    },
+    {
+      "id": "97a7",
+      "Name": "bike",
+      "Price": "989",
+      "color": "we",
+      "Category": "ew",
+      "Description": "ex",
+      "URL": "xd"
+    }
   ]
 }
