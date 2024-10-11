@@ -18,4 +18,5 @@ export interface Products{
         Category:string,
         Description:string,
         URL:string,
+        images:string
 }
