@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ProductService } from '../services/product.service';
 import { Products } from '../Data-type';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-seller-add-product',
@@ -11,7 +12,7 @@ import { Products } from '../Data-type';
 export class SellerAddProductComponent implements OnInit {
 
   addproductmessage:string|undefined;
-  constructor(private product:ProductService) {}
+  constructor(private product:ProductService, private router:Router) {}
   ngOnInit(): void {
     throw new Error('Method not implemented.');
   }
@@ -25,11 +26,10 @@ export class SellerAddProductComponent implements OnInit {
           if(result){
             this.addproductmessage="Product added Successfuly"
           }
-          setTimeout(() =>(this.addproductmessage=undefined),3000)
-            
+          setTimeout(() => {
+            this.router.navigate(['/seller-home']);
+          }, 3000);
           
-         
-
         })
         
   }

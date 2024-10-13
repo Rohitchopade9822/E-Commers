@@ -31,14 +31,19 @@ export class SellerHomeComponent implements OnInit  {
       if(result)
       {
         this.productMessage="product is deleted"
+        this.reloadProductList();
       }
     })  
     setTimeout(() => {
       this.productMessage=undefined
     }, 3000);
-       
-    
+        
   }
+  reloadProductList() {
+    this.product.productlist().subscribe((result) => {
+        this.produnctlist = result;
+    });
+}
 }
 
  

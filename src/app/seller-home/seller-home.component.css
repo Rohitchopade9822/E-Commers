@@ -65,3 +65,21 @@
     max-width: 100px;
     border-radius: 5px;
 }
+.delete-button {
+    background-color: #af615a; /* Red background */
+    color: white; /* White text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.delete-button:hover {
+    background-color: #675654; /* Darker red on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.delete-button:active {
+    background-color: #7d5c59; /* Even darker red on click */}
