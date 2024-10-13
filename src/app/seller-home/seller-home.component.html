@@ -1,5 +1,6 @@
 <div class="product-list">
     <h1>All Product List</h1>
+    <p>{{productMessage}}</p>
     <table border="1">
         <thead>
             <tr>
@@ -9,6 +10,7 @@
                 <th>color</th>
                 <th>Category</th>
                 <th>Description</th>
+                <th>Action</th>
 
             </tr>
         </thead>
@@ -21,8 +23,7 @@
                <td>{{item.color}}</td>
                <td>{{item.Category}}</td> 
                <td>{{item.Description}}</td> 
-               
-
+               <td><button (click)="DeleteProductId(item.id)">Delete</button></td>
             </tr>
         </tbody>
     </table>

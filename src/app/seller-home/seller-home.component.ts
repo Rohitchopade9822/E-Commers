@@ -12,6 +12,7 @@ import { ProductService } from '../services/product.service';
 export class SellerHomeComponent implements OnInit  {
 
   produnctlist:undefined |Products[]
+  productMessage:undefined |string;
   constructor(private product:ProductService){}
 
   ngOnInit(): void {
@@ -23,10 +24,24 @@ export class SellerHomeComponent implements OnInit  {
       this.produnctlist=result;
     })
   }
+  DeleteProductId(id:string){
+   
+   console.warn("test id id",id)
+    this.product.deleteProduct(id).subscribe((result)=>{
+      if(result)
+      {
+        this.productMessage="product is deleted"
+      }
+    })  
+    setTimeout(() => {
+      this.productMessage=undefined
+    }, 3000);
+       
+    
+  }
+}
 
  
-   
- }
 
 
 
