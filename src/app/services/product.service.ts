@@ -21,4 +21,5 @@ export class ProductService {
     console.warn("product deleted")
      return this.http.delete(`http://localhost:3000/product/${id}`)
   }
+
 }

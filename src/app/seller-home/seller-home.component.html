@@ -11,6 +11,7 @@
                 <th>Category</th>
                 <th>Description</th>
                 <th>Action</th>
+                <th>Update</th>
 
             </tr>
         </thead>
@@ -23,7 +24,11 @@
                <td>{{item.color}}</td>
                <td>{{item.Category}}</td> 
                <td>{{item.Description}}</td> 
+
                <td><button class="delete-button" (click)="DeleteProductId(item.id)">Delete</button></td>
+               
+               <td><button class="Update-product" (click)="editProduct()">Edit Product</button></td>
+
             </tr>
         </tbody>
     </table>
