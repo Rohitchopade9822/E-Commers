@@ -46,10 +46,7 @@
     background-color: #bdc3c7; /* Light grey */
 }
 
-.product-list tbody tr:hover {
-    background-color: #f39c12; /* Orange on hover */
-    color: white;
-}
+
 
 .product-list tbody tr td a {
     color: #e74c3c; /* Red */
@@ -83,3 +80,22 @@
 
 .delete-button:active {
     background-color: #7d5c59; /* Even darker red on click */}
+
+    .update-product {
+        background-color: #71a373; /* Green background */
+        border: none; /* Remove borders */
+        color: white; /* White text */
+        padding: 10px 20px; /* Padding inside the button */
+        text-align: center; /* Centered text */
+        text-decoration: none; /* Remove underline */
+        display: inline-block; /* Make the element inline-block */
+        font-size: 16px; /* Font size */
+        margin: 4px 2px; /* Margin around the button */
+        cursor: pointer; /* Pointer cursor on hover */
+        border-radius: 5px; /* Rounded corners */
+        transition: background-color 0.3s; /* Smooth transition on hover */
+      }
+      
+      .update-product:hover {
+        background-color: #45a049; /* Darker green on hover */
+      }

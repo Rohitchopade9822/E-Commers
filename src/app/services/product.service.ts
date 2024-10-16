@@ -26,6 +26,10 @@ export class ProductService {
   getProductById(id: string) {
     return this.http.get<Products>(`http://localhost:3000/product/${id}`);
   }
+  Updateproduct(product: Products) {
+    console.warn(product)
+    return this.http.put<Products>(`http://localhost:3000/product/${product.id}`,product);
+  }
 
 
 }
