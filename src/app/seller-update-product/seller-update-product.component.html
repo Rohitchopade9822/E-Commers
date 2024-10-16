@@ -1,16 +1,18 @@
-<div class="add-product">
+ 
+  <div class="add-product">
     <h2>Edit Product</h2>
     <form #addProduct="ngForm" (ngSubmit)="Submit(addProduct.value)" class="common-form">
 
         
-        <input type="text" class="form-input" placeholder="Enter product Name" name="Name" ngModel>
-        <input type="text" class="form-input" placeholder="Enter product Price" name="Price" ngModel>
-        <input type="text" class="form-input" placeholder="Enter product color" name="color" ngModel>
-        <input type="text" class="form-input" placeholder="Enter product Category" name="Category" ngModel>
-        <input type="text" class="form-input" placeholder="Enter product Description" name="Description" ngModel>
-        <input type="text" class="form-input" placeholder="Enter product Image URL" name="URL" ngModel>
+        <input type="text" class="form-input" placeholder="Enter product Name" name="Name" ngModel ={{productdata?.Name}}>
+        <input type="text" class="form-input" placeholder="Enter product Price" name="Price" ngModel ={{productdata?.Price}}>
+        <input type="text" class="form-input" placeholder="Enter product color" name="color" ngModel ={{productdata?.color}}>
+        <input type="text" class="form-input" placeholder="Enter product Category" name="Category" ngModel ={{productdata?.Category}}>
+        <input type="text" class="form-input" placeholder="Enter product Description" name="Description" ngModel ={{productdata?.Description}}>
+        <input type="text" class="form-input" placeholder="Enter product Image URL" name="URL" ngModel ={{productdata?.URL}}>
         <button class="button-class">Update</button>
         
 
     </form>
-</div>
+</div>  
+  

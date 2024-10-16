@@ -11,11 +11,12 @@
                 <th>Category</th>
                 <th>Description</th>
                 <th>Action</th>
-                <th>Update</th>
+                <th>update-product</th>
 
             </tr>
         </thead>
         <tbody>
+
             <tr *ngFor="let item of produnctlist">
                
                <td><img src="{{item.URL}}"/></td> 
@@ -26,11 +27,14 @@
                <td>{{item.Description}}</td> 
 
                <td><button class="delete-button" (click)="DeleteProductId(item.id)">Delete</button></td>
+
                
-               <td><button class="Update-product" (click)="editProduct()">Edit Product</button></td>
+               <td><button class="update-product" (click)="redirectToEditComponent(item.id)">Edit</button></td>
 
             </tr>
+
         </tbody>
+
     </table>
 
 </div>

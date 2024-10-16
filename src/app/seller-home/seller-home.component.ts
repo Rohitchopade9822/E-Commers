@@ -3,6 +3,7 @@ import { SellService } from '../services/sell.service';
 import { Route, Router } from '@angular/router';
 import { Products, SignUp } from '../Data-type';
 import { ProductService } from '../services/product.service';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-seller-home',
@@ -10,19 +11,22 @@ import { ProductService } from '../services/product.service';
   styleUrls: ['./seller-home.component.css']
 })
 export class SellerHomeComponent implements OnInit {
-
+  
+  
   produnctlist: undefined | Products[]
   productMessage: undefined | string;
-  constructor(private product: ProductService,private router: Router ) { }
+  constructor(private product: ProductService,private router: Router,) {}
+   
 
   ngOnInit(): void {
 
-
+    
     this.product.productlist().subscribe((result) => {
 
       console.log(result)
       this.produnctlist = result;
     })
+  
   }
   DeleteProductId(id: string) {
 
@@ -44,10 +48,13 @@ export class SellerHomeComponent implements OnInit {
     });
 
   }
-  editProduct(): void {
-    console.log("edit function called");
-    this.router.navigate(['/seller-Update-product']);  // Redirect to the Edit Product component
-}
+  
+  redirectToEditComponent(itemId: string) {
+    console.warn(" redirectToEditComponent called")
+    this.router.navigate(['/seller-Update-product', itemId]);
+    
+  }
+ 
 }
 
 
