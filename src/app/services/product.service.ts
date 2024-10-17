@@ -30,6 +30,11 @@ export class ProductService {
     console.warn(product)
     return this.http.put<Products>(`http://localhost:3000/product/${product.id}`,product);
   }
+  Popular_product() {
+    
+    return this.http.get<Products[]>(`http://localhost:3000/product?_limit=10`);
+
+  }
 
 
 }

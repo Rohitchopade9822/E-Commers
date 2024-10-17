@@ -21,4 +21,35 @@
     height: 300%;
     object-fit: cover;
   }
+  .horizontal-scroll {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-top: 50px; /* Adjust as needed */
+  }
+  
+  .image-container {
+    flex: 0 0 auto;
+    margin: 0 50px !important; /* Force the spacing between images */
+  }
+  .image-container img {
+    height: auto;
+    max-height: 150px; /* Adjust as needed */
+    width: auto;
+    transform: translateY(20px); /* Moves the image down slightly */
+  }
+  .carousel-inner {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-item img {
+    margin: auto;
+    max-height: 400px; /* Adjust based on your needs */
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    filter: invert(100%);
+  }
   
