@@ -31,7 +31,7 @@ export class SellerUpdateProductComponent implements OnInit {
     }
     this.product.Updateproduct(data).subscribe((result) => {
       if (result) {
-        this.productmesg = "Product upadated";
+        this.productmesg = "Product upadated Successfully";
        
       }
     });
