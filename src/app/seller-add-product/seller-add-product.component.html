@@ -1,4 +1,4 @@
-<div class="add-product">
+ <div class="add-product">
     <h2>Add New Product</h2>
     <form #addProduct="ngForm" (ngSubmit)="Submit(addProduct.value)" class="common-form">
 
@@ -13,4 +13,46 @@
         
 
     </form>
-</div>
+</div> 
+<!-- <div class="add-product">
+    <h2>Add New Product</h2>
+    <form #addProduct="ngForm" (ngSubmit)="Submit(addProduct.value)" class="common-form" novalidate>
+        <div>
+            <input type="text" class="form-input" placeholder="Enter product Name" name="Name" ngModel required>
+            <div *ngIf="addProduct.controls.Name?.invalid && addProduct.controls.Name?.touched" class="error-message">
+                Product Name is required.
+            </div>
+        </div>
+        <div>
+            <input type="text" class="form-input" placeholder="Enter product Price" name="Price" ngModel required pattern="^[0-9]+$">
+            <div *ngIf="addProduct.controls.Price?.invalid && addProduct.controls.Price?.touched" class="error-message">
+                Valid Product Price is required.
+            </div>
+        </div>
+        <div>
+            <input type="text" class="form-input" placeholder="Enter product color" name="color" ngModel required>
+            <div *ngIf="addProduct.controls.color?.invalid && addProduct.controls.color?.touched" class="error-message">
+                Product color is required.
+            </div>
+        </div>
+        <div>
+            <input type="text" class="form-input" placeholder="Enter product Category" name="Category" ngModel required>
+            <div *ngIf="addProduct.controls.Category?.invalid && addProduct.controls.Category?.touched" class="error-message">
+                Product Category is required.
+            </div>
+        </div>
+        <div>
+            <input type="text" class="form-input" placeholder="Enter product Description" name="Description" ngModel required>
+            <div *ngIf="addProduct.controls.Description?.invalid && addProduct.controls.Description?.touched" class="error-message">
+                Product Description is required.
+            </div>
+        </div>
+        <div>
+            <input type="url" class="form-input" placeholder="Enter product Image URL" name="URL" ngModel required>
+            <div *ngIf="addProduct.controls.URL?.invalid && addProduct.controls.URL?.touched" class="error-message">
+                Valid Image URL is required.
+            </div>
+        </div>
+        <button class="button-class" [disabled]="addProduct.invalid">Add Product</button>
+    </form>
+</div> -->

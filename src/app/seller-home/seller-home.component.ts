@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { SellService } from '../services/sell.service';
 import { Route, Router } from '@angular/router';
 import { Products, SignUp } from '../Data-type';
 import { ProductService } from '../services/product.service';
-import { FormBuilder, FormGroup } from '@angular/forms';
+
 
 @Component({
   selector: 'app-seller-home',
@@ -25,6 +24,7 @@ export class SellerHomeComponent implements OnInit {
 
       console.log(result)
       this.produnctlist = result;
+
     })
   
   }
@@ -50,7 +50,7 @@ export class SellerHomeComponent implements OnInit {
   }
   
   redirectToEditComponent(itemId: string) {
-    console.warn(" redirectToEditComponent called")
+   
     this.router.navigate(['/seller-Update-product', itemId]);
     
   }

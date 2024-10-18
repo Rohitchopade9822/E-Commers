@@ -7,10 +7,12 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
 
+
   menutype:string="default";
+
   sellername:string='';
 
-  constructor( private route:Router){
+  constructor(private route:Router){
 
   }
   ngOnInit():void{
@@ -28,6 +30,14 @@ export class HeaderComponent implements OnInit {
             this.sellername=sellerdata.name
            }
         }
+        if(localStorage.getItem('order-con') && val.url.includes('order-con')){
+             console.warn("order_Called")
+          if(localStorage.getItem('order-con')){
+            let odersave=localStorage.getItem('order-con');
+            let orderdata=odersave && JSON.parse(odersave)[0];
+          }
+        }
+      
         else{
 
           console.warn("out side of seller area")
