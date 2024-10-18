@@ -23,8 +23,6 @@ export class SellerComponent implements OnInit {
     this.seller.reloadseller()
     throw new Error('Method not implemented.');
   }
-  ngonInit():void{}
- 
   SignUp(data: any): void {
     
     this.seller.userSignUp(data);
