@@ -121,10 +121,6 @@
   margin: 0 auto; /* Center horizontally */
 }
 
-
-
-
-
 .ng-container {
   display: flex;
   flex-wrap: wrap;
