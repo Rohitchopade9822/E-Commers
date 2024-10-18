@@ -1,24 +1,85 @@
-.update-product {
-    background-color: #4CAF50; /* Green background */
-    border: none; /* Remove borders */
-    color: white; /* White text */
-    padding: 10px 20px; /* Padding inside the button */
-    text-align: center; /* Centered text */
-    text-decoration: none; /* Remove underline */
-    display: inline-block; /* Make the element inline-block */
-    font-size: 16px; /* Font size */
-    margin: 4px 2px; /* Margin around the button */
-    cursor: pointer; /* Pointer cursor on hover */
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s; /* Smooth transition on hover */
-  }
-  
-  .update-product:hover {
-    background-color: #45a049; /* Darker green on hover */
-  }
-  .img-wrapper {
-    width: 700%; /* Adjust this value as needed */
-    height: 300%;
-    object-fit: cover;
-  }
-  
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.jk {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.input-item {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    background: linear-gradient(135deg, #787670 0%, #eff2f4 100%);
+    transition: transform 0.2s;
+}
+
+.input-item:hover {
+    transform: scale(1.05);
+}
+
+.input-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.input-item h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #0b0a0a;
+    margin-left: 1%;
+    
+}
+
+.input-item p {
+    margin: 5px 0;
+    color: #444;
+    margin-left: 0%;
+}
+
+.input-item p:nth-child(3) {
+    color: #1b1312; /* Tomato */
+    margin-left: 1%;
+}
+
+.input-item p:nth-child(4) {
+    color: #090a0a; /* Steel Blue */
+    margin-left: 1%;
+}
+
+.input-item p:nth-child(5) {
+    color: #0c0f0c; /* Lime Green */
+    margin-left: 1%;
+}
+
+.input-item p:nth-child(6) {
+    color: #0e0b10; /* Blue Violet */
+    margin-left: 1%;
+}
+.buy-button {
+    background-color: #d4927a;
+    color: rgb(14, 13, 13);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #f6a99b; /* Lighter Tomato */
+}
