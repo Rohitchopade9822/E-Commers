@@ -1,20 +1,13 @@
+<div class="main" *ngIf="Popularproduct.length">
+<div class="jk">
+    <div class="input-item" *ngFor="let item of Popularproduct">
+        <img [src]="item.URL" alt="{{item.Name}}">
+        <h2>{{item.Name}}</h2>
+        <p>Price: {{item.Price}}</p>
+        <p>Color: {{item.color}}</p>
+        <p>Category: {{item.Category}}</p>
+        <p>Description: {{item.Description}}</p>
 
-
-<ng-container *ngIf="Popularproduct.length">
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item" *ngFor="let item of Popularproduct; let i = index" [class.active]="i === 0">
-          <img class="d-block w-100" [src]="item.URL" alt="Slide {{i + 1}}">
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
     </div>
-  </ng-container>
-  
+</div>
+<div>
